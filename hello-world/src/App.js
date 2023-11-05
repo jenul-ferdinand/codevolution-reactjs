@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import Hello from './components/Hello';
+import logo from './logo.svg'
+import './App.css'
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
+import Hello from './components/Hello'
+import Message from './components/Message'
 
 function App() {
   return (
     <div className="App">
+      <Hello/>
+
+      <br/>
 
       <Greet name="Bruce" heroName="Batman">
         <p>This is children props</p>
@@ -16,15 +20,19 @@ function App() {
         <button>Action</button>
       </Greet>
 
-      <Greet name="Diana" heroName="Wonder Woman"/>  
+      <Greet name="Diana" heroName="Wonder Woman"/>
+
+      <br/>
 
       <Welcome name="Bruce" heroName="Batman"/>
       <Welcome name="Clark" heroName="Superman"/>
       <Welcome name="Diana" heroName="Wonder Woman"/>
 
-      {/* <Hello /> */}
+      <br/>
+
+      <Message/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
